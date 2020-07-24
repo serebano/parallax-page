@@ -8,6 +8,36 @@ body, html {
   color: #777;
 }
 
+.my-div-icon {
+	background: #eee;
+	width: 100px;
+	height: 100px;
+}
+.tooltip {
+	font-size: 16px;
+}
+
+.map-overlay {
+  position: absolute;
+  z-index: 99999990999;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0,0,0,0); */
+  top:0;
+  left:0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.map-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0,0,0,0.2); */
+  top:0;
+  left:0;
+}
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   /* opacity: 0.65; */
@@ -18,7 +48,7 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("images/tech3.jpg");
+  background-image: url("images/intro-1.jpg");
   min-height: 100%;
 }
 
@@ -30,7 +60,7 @@ body, html {
 }
 
 .bgimg-3 {
-  background-image: url("images/tech1.webp");
+  background-image: url("images/contact-1.jpg");
   min-height: 100%;
 }
 
@@ -38,7 +68,7 @@ body, html {
   /* background: rgba(255,255,255,0.8); */
   font-size: 28px;
   padding: 10px 0;
-  color: #fff;
+  color: #444;
   display: inline-block;
   font-weight: 300;
   font-style: italic;
@@ -54,21 +84,38 @@ body, html {
 }
 
 .contact-section .contact-section-1  {
-  background: rgba(0,0,0,0.8);
-  color: #fff;
-  font-size: 38px;
+  /* background: rgba(0,0,0,0.8); */
+  color: #333;
+  font-size: 48px;
   font-weight: 900;
-  padding: 20px;
+  padding: 20px 0;
   display: inline-block;
 }
 
+.contact-section input, .contact-section textarea {
+  font-size: 18px;
+  padding: 7px;
+  border: 0px solid #eee;
+  border-radius: 5px;
+  margin: 10px 0;
+  opacity: 0.8
+}
+
+.contact-section input {
+  min-width: 300px;
+}
+
+.contact-section textarea {
+  max-width: 600px;
+}
+
 .contact-section .contact-section-2, .contact-section-3  {
-  background: rgba(255,255,255,0.7);
+  /* background: rgba(255,255,255,0.3); */
   color: #000;
   font-size: 22px;
   font-weight: 300;
-  padding: 20px;
-  width: auto;
+  padding: 0px;
+  margin: 20px 0;
 }
 
 .map-a1 {
@@ -118,7 +165,27 @@ body, html {
 
 .section {
   padding: 10% 10% 0 10%;
-  text-align:right;
+  text-align:left;
+  color: #444;
+}
+
+
+a.next {
+  color: #555;
+  position: absolute;
+  display: inline-block;
+  bottom: 7%;
+  left: 50%;
+  margin-left: -20px;
+  font-size: 40px;
+  z-index: 9999999999999;
+  transition: transform .5s ease;
+}
+
+a.next:hover {
+  color: #568af2;
+  transform: scale(1.5);
+  transition: transform .3s ease;
 }
 
 .caption {
@@ -131,11 +198,11 @@ body, html {
 }
 
 span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 42px;
-  letter-spacing: 2px;
+  /* background-color: #111; */
+  color: #222;
+  padding: 18px 0;
+  font-size: 72px;
+  letter-spacing: 1px;
   font-weight: 900;
   display: inline-block;
   margin-bottom: 10px;
