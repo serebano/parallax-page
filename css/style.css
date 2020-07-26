@@ -9,7 +9,7 @@ body, html {
 }
 
 .form {
-  display: none;
+  display: block;
 }
 .form-option {
   padding: 5px 0;
@@ -160,7 +160,14 @@ body, html {
 
 .contact-section input[type="submit"] {
   background: #fff;
-  box-shadow: 0 0 5px #eee;
+  box-shadow: 0 0 10px #ccc;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact-section input[type="submit"]:hover {
+  background: #eee;
 }
 
 .contact-section textarea {

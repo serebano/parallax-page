@@ -36,19 +36,27 @@
 
 <div class="bgimg-3" id="contact">
   <div class="contact-section">
-    <div class="contact-section-1">Je suis intéressé par ce projet</div>
+    <div class="contact-section-1">Ca m'interesse!</div>
     <div class="contact-section-2">
-      <div class="form-option"><a onclick="toggleForm('tel')">Je souhaite être rappelé</a></div>
+      <!-- <div class="form-option"><a onclick="toggleForm('tel')">Je souhaite être rappelé</a></div> -->
       <div id="tel-form" class="form">
         <form>
-          <input name="tel" type="text" placeholder="numéro de téléphone">
           <div>
-            <input type="submit" value="C'est fait!" />
+            <input name="tel" type="text" placeholder="numéro de téléphone">
+          </div>
+          <div>
+             <input name="email" type="text" placeholder="email">
+          </div>
+          <div>
+             <textarea name="info" rows="8" cols="80" placeholder="Commentaire..."></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Je souhaite etre rappelé" />
           </div>
         </form>
       </div>
-      <div class="form-option"><a onclick="toggleForm('email')">Je souhaite être tenu informé de l’avancement du projet</a></div>
-      <div id="email-form" class="form">
+      <!-- <div class="form-option"><a onclick="toggleForm('email')">Je souhaite être tenu informé de l’avancement du projet</a></div> -->
+      <!-- <div id="email-form" class="form">
         <form>
           <div>
              <input name="email" type="text" placeholder="email">
@@ -60,7 +68,7 @@
             <input type="submit" value="C'est fait!" />
           </div>
         </form>
-      </div>
+      </div> -->
      </div>
   </div>
   <a href="#intro" class="next"><i class="fas fa-chevron-circle-up"></i></a>
