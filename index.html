@@ -86,22 +86,28 @@
 
   map.fitBounds(L.latLngBounds(latlngs));
 
-  var myIcon = L.divIcon({
-    className: 'my-div-icon',
-    iconSize: [100, 100],
-    html: '<b>Petrica</b>'
+  var petrica = L.divIcon({
+    className: 'petrica-icon',
+    iconSize: [50, 50],
+    html: '<i class="fas fa-smile"></i>'
   });
 
-  map.addLayer(L.marker(latlngs[0]).bindTooltip(
+  var magazinu = L.divIcon({
+    className: 'magazinu-icon',
+    iconSize: [50, 50],
+    html: '<i class="fas fa-store"></i>'
+  });
+
+  map.addLayer(L.marker(latlngs[0], {icon: petrica}).bindTooltip(
     "<b>Pierre</b> cherche un cadeau en urgence sur google: <br /><i><u>bijoux originaux nantes</u></i>",
     {
       permanent:true,
       className: 'tooltip',
       direction: 'top',
       opacity: 1,
-      offset: L.point(0, -10)
+      offset: L.point(0, -50)
     }).openTooltip());
-  map.addLayer(L.marker(latlngs[len - 1]).bindTooltip(
+  map.addLayer(L.marker(latlngs[len - 1], {icon: magazinu}).bindTooltip(
     "Grâce à la visio, Delphine la gérante conseille<br /><b>Pierre</b> dans sa recherche et lui montre ses dernières créations",
     {
       permanent:true,
